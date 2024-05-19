@@ -14,5 +14,5 @@ public class TestMod implements ModInitializer {
 
 
 		LOGGER.info("Hello Fabric world!");
-	}
+	} // test commit
 }
