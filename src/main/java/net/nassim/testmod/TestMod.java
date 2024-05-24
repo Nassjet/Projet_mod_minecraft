@@ -2,6 +2,9 @@ package net.nassim.testmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.nassim.testmod.block.ModBlocks;
+import net.nassim.testmod.item.ModItemGroups;
+import net.nassim.testmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +14,9 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
-
-		LOGGER.info("Hello Fabric world!");
-	} // test commit
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+	}
 }
